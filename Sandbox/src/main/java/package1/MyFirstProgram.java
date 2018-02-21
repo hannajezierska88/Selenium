@@ -10,8 +10,9 @@ public class MyFirstProgram {
     System.out.println("Powierz boku " + s.l + " = " + s.area());
 
     Rectangle r = new Rectangle(4, 6);
-    System.out.println("Pow prostokata o bokach " + r.a + " i " + r.b + " = " + r.area(a));
+    System.out.println("Pow prostokata o bokach " + r.a + " i " + r.b + " = " + r.area());
     double len = 5;
+
 
 
     double a = 4;
@@ -19,6 +20,7 @@ public class MyFirstProgram {
 
 
   }
+
 
   public static void hello(String somebody) {
 
