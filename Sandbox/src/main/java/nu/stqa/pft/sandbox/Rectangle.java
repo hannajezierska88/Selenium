@@ -1,4 +1,4 @@
-package package1;
+package nu.stqa.pft.sandbox;
 
 public class Rectangle {
 
