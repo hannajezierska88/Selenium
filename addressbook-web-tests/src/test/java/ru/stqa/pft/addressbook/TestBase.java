@@ -81,4 +81,28 @@ public class TestBase {
   protected void selectGroup() {
     wd.findElement(By.name("selected[]")).click();
   }
+
+  protected void contactListPage() {
+      wd.findElement(By.linkText("home")).click();
+  }
+
+  protected void submitNewContactCreation() {
+      wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
+  }
+
+  protected void fillNewContactForm(String name, String lastName, String mobileNo) {
+      wd.findElement(By.name("firstname")).click();
+      wd.findElement(By.name("firstname")).clear();
+      wd.findElement(By.name("firstname")).sendKeys(name);
+      wd.findElement(By.name("lastname")).click();
+      wd.findElement(By.name("lastname")).clear();
+      wd.findElement(By.name("lastname")).sendKeys(lastName);
+      wd.findElement(By.name("mobile")).click();
+      wd.findElement(By.name("mobile")).clear();
+      wd.findElement(By.name("mobile")).sendKeys(mobileNo);
+  }
+
+  protected void goToAddNewContact() {
+      wd.findElement(By.linkText("add new")).click();
+  }
 }
