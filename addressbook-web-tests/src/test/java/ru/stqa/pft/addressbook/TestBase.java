@@ -90,16 +90,16 @@ public class TestBase {
       wd.findElement(By.xpath("//div[@id='content']/form/input[21]")).click();
   }
 
-  protected void fillNewContactForm(String name, String lastName, String mobileNo) {
+  protected void fillNewContactForm(ContactData contactData) {
       wd.findElement(By.name("firstname")).click();
       wd.findElement(By.name("firstname")).clear();
-      wd.findElement(By.name("firstname")).sendKeys(name);
+      wd.findElement(By.name("firstname")).sendKeys(contactData.getName());
       wd.findElement(By.name("lastname")).click();
       wd.findElement(By.name("lastname")).clear();
-      wd.findElement(By.name("lastname")).sendKeys(lastName);
+      wd.findElement(By.name("lastname")).sendKeys(contactData.getLastName());
       wd.findElement(By.name("mobile")).click();
       wd.findElement(By.name("mobile")).clear();
-      wd.findElement(By.name("mobile")).sendKeys(mobileNo);
+      wd.findElement(By.name("mobile")).sendKeys(contactData.getMobileNo());
   }
 
   protected void goToAddNewContact() {
