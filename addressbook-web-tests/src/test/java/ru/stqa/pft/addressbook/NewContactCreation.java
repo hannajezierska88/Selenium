@@ -10,7 +10,7 @@ public class  NewContactCreation extends TestBase{
 
     
     @Test
-    public void NewContactCreation() {
+    public void testNewContactCreation() {
 
         goToAddNewContact();
         fillNewContactForm("Hanna", "Jezierska", "+483453845");
