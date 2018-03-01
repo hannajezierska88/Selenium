@@ -3,15 +3,16 @@ package ru.stqa.pft.addressbook.appmanager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
-import ru.stqa.pft.addressbook.model.ContactData;
+import ru.stqa.pft.addressbook.model1.ContactData;
 
 import java.util.concurrent.TimeUnit;
 
 public class ApplicatiomManager {
   FirefoxDriver wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true).setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
+  private  GroupHelper groupHelper;
   private SessionHelper sessionHelper;
   private  NaviagtionHelper naviagtionHelper;
-  private  GroupHelper groupHelper;
+
 
 
 
