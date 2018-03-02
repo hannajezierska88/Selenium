@@ -10,7 +10,7 @@ public class GroupCreationTest extends TestBase {
   @Test
   public void testGroupCreationTest() {
 
-    app.goToGroupCreation();
+    app.getNaviagtionHelper().goToGroupCreation();
     app.getGroupHelper().initGroupCreation();
     app.getGroupHelper().fillGroupForm(new GroupData("Test1", "Testheader", "Testhadertest"));
     app.getGroupHelper().submitGroupCreation();

@@ -14,4 +14,8 @@ public class NaviagtionHelper extends HelperBase{
   public void goToGroupCreation() {
     click(By.linkText("groups"));
   }
+
+  public void goToAddNewContact() {
+    wd.findElement(By.linkText("add new")).click();
+  }
 }
