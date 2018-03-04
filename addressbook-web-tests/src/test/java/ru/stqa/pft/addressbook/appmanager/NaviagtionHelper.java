@@ -18,4 +18,8 @@ public class NaviagtionHelper extends HelperBase{
   public void goToAddNewContact() {
     wd.findElement(By.linkText("add new")).click();
   }
+
+  public void acceptDeletion(){
+    wd.switchTo().alert().accept();
+  }
 }
