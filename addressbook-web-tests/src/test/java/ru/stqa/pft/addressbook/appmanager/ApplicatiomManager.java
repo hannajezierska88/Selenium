@@ -11,6 +11,7 @@ import org.openqa.selenium.remote.BrowserType;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicatiomManager{
+
   WebDriver wd;
   private ContactHelper contactHelper;
   private  GroupHelper groupHelper;
@@ -27,14 +28,14 @@ public class ApplicatiomManager{
   public void init() {
 
     if (browser == BrowserType.FIREFOX){
-      FirefoxDriver wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));//(new FirefoxOptions().setLegacy(true).setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
+      wd = new FirefoxDriver(new FirefoxOptions().setLegacy(true));//(new FirefoxOptions().setLegacy(true).setBinary("C:/Program Files/Mozilla Firefox/firefox.exe"));
     }else if (browser == BrowserType.CHROME){
       wd = new ChromeDriver();
     }else if (browser == BrowserType.IE){
       wd = new InternetExplorerDriver();
     }
 
-    System.setProperty("webdriver.firefox.marionette", "C:/Users/smokehead/Documents/GitHub/Selenium/addressbook-web-tests");
+    //System.setProperty("webdriver.firefox.marionette", "C:/Users/smokehead/Documents/GitHub/Selenium/addressbook-web-tests");
     wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
     wd.get("http://localhost:8080/addressbook/group.php");
     contactHelper = new ContactHelper(wd);
