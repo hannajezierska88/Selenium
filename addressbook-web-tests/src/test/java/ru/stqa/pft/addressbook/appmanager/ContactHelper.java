@@ -13,7 +13,7 @@ public class ContactHelper extends HelperBase{
   }
 
   public void contactListPage() {
-      click(By.linkText("home"));
+      click(By.xpath("//div/div[3]/ul/li[1]/a"));
   }
 
   public void submitNewContactCreation() {
