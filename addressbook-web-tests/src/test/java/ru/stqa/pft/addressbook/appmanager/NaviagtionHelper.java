@@ -13,14 +13,28 @@ public class NaviagtionHelper extends HelperBase{
   }
 
   public void goToGroupCreation() {
-    click(By.linkText("groups"));
-  }
+    if (isElementPresent(By.tagName("h1"))
+            && wd.findElement(By.tagName("h1")).getText().equals("Groups")
+            && isElementPresent((By.name("new")))) {
+      return;
+    }
+      click(By.linkText("groups"));
+    }
+
 
   public void goToAddNewContact() {
+
     wd.findElement(By.linkText("add new")).click();
+  }
+  public void contactListPage() {
+    if (isElementPresent(By.id("maintable"))) {
+      return;
+    }
+    click(By.linkText("home"));
   }
 
   public void acceptDeletion(){
+
     wd.switchTo().alert().accept();
   }
 }

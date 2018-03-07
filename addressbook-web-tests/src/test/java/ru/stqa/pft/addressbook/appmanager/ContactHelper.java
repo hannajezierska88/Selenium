@@ -15,9 +15,7 @@ public class ContactHelper extends HelperBase{
     super(wd);
   }
 
-  public void contactListPage() {
-      click(By.xpath("//div/div[3]/ul/li[1]/a"));
-  }
+
 
   public void submitNewContactCreation() {
       click(By.xpath("//div[@id='content']/form/input[21]"));
