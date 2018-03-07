@@ -8,7 +8,7 @@ import ru.stqa.pft.addressbook.appmanager.ApplicatiomManager;
 
 public class TestBase {
 
-  protected final ApplicatiomManager app = new ApplicatiomManager(BrowserType.IE);
+  protected final ApplicatiomManager app = new ApplicatiomManager(BrowserType.FIREFOX);
 
   @BeforeMethod
   public void setUp() throws Exception {
