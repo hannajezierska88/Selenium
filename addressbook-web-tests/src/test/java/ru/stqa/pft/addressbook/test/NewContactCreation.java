@@ -10,9 +10,8 @@ public class  NewContactCreation extends TestBase {
     public void testNewContactCreation() {
 
         app.getNaviagtionHelper().goToAddNewContact();
-        app.getContactHelper().fillNewContactForm(new ContactData("Hanna", "Jezierska", "+483453845","Test1"), true);
-        app.getContactHelper().submitNewContactCreation();
-        app.getNaviagtionHelper().contactListPage();
+        app.getContactHelper().createNewContact(new ContactData("Hanna", "Jezierska", "+483453845","Test1"));
+
     }
 
 
