@@ -37,7 +37,7 @@ public class ApplicatiomManager{
 
     //System.setProperty("webdriver.firefox.marionette", "C:/Users/smokehead/Documents/GitHub/Selenium/addressbook-web-tests");
     wd.manage().timeouts().implicitlyWait(0, TimeUnit.SECONDS);
-    wd.get("http://localhost:8080/addressbook/group.php");
+    wd.get("http://localhost:8080/addressbook/");
     contactHelper = new ContactHelper(wd);
     groupHelper = new GroupHelper(wd);
     naviagtionHelper = new NaviagtionHelper(wd);
