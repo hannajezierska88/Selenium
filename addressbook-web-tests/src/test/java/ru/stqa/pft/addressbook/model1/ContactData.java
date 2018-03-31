@@ -1,16 +1,28 @@
 package ru.stqa.pft.addressbook.model1;
 
 public class ContactData {
+  private  int id;
   private final String name;
   private final String lastName;
   private final String mobileNo;
   private String group;
 
   public ContactData(String name, String lastName, String mobileNo, String group) {
+    this.id = Integer.MAX_VALUE;
     this.name = name;
     this.lastName = lastName;
     this.mobileNo = mobileNo;
     this.group = group;
+  }
+  public ContactData(int id,String name, String lastName, String mobileNo, String group) {
+    this.id = id;
+    this.name = name;
+    this.lastName = lastName;
+    this.mobileNo = mobileNo;
+    this.group = group;
+  }
+  public int getId() {
+    return id;
   }
 
   public String getName() {
@@ -29,11 +41,17 @@ public class ContactData {
   public String getGroup() {
     return group;
   }
+
   @Override
   public String toString() {
     return "ContactData{" +
-            "name='" + name + '\'' +
+            "id='" + id + '\'' +
+            ", name='" + name + '\'' +
             '}';
+  }
+
+  public void setId(int id) {
+    this.id = id;
   }
 
   @Override
