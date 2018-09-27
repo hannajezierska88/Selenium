@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import java.util.concurrent.TimeUnit;
 
-public class GroupDeletaion extends TestBase{
+public class GroupDeletion extends TestBase{
 
 
 
