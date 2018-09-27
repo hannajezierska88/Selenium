@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="2" ignored="0" total="6" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default Suite" duration-ms="85404" started-at="2018-08-08T17:06:33Z" finished-at="2018-08-08T17:07:58Z">
+    <groups>
+    </groups>
+    <test name="Sandbox" duration-ms="85404" started-at="2018-08-08T17:06:33Z" finished-at="2018-08-08T17:07:58Z">
+      <class name="ru.stqa.pft.addressbook.test.ContactModificationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.stqa.pft.addressbook.test.ContactModificationTest@1d251891]" name="setUp" is-config="true" duration-ms="8802" started-at="2018-08-08T17:06:50Z" finished-at="2018-08-08T17:06:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testContactModification()[pri:0, instance:ru.stqa.pft.addressbook.test.ContactModificationTest@1d251891]" name="testContactModification" duration-ms="6043" started-at="2018-08-08T17:06:59Z" finished-at="2018-08-08T17:07:05Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lists differ at element [7]: ContactData{id='41', name='Jezierska Hanna +483453845'} != ContactData{id='41', name='Hanna'} expected [ContactData{id='41', name='Jezierska Hanna +483453845'}] but found [ContactData{id='41', name='Hanna'}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lists differ at element [7]: ContactData{id='41', name='Jezierska Hanna +483453845'} != ContactData{id='41', name='Hanna'} expected [ContactData{id='41', name='Jezierska Hanna +483453845'}] but found [ContactData{id='41', name='Hanna'}]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:831)
+at org.testng.Assert.assertEquals(Assert.java:796)
+at ru.stqa.pft.addressbook.test.ContactModificationTest.testContactModification(ContactModificationTest.java:36)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactModification -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.stqa.pft.addressbook.test.ContactModificationTest@1d251891]" name="tearDown" is-config="true" duration-ms="607" started-at="2018-08-08T17:07:05Z" finished-at="2018-08-08T17:07:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.stqa.pft.addressbook.test.ContactModificationTest -->
+      <class name="ru.stqa.pft.addressbook.test.GroupDeletionTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupDeletionTest@58ceff1]" name="setUp" is-config="true" duration-ms="7578" started-at="2018-08-08T17:07:22Z" finished-at="2018-08-08T17:07:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGroupDeletion()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupDeletionTest@58ceff1]" name="testGroupDeletion" duration-ms="3131" started-at="2018-08-08T17:07:29Z" finished-at="2018-08-08T17:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupDeletion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupDeletionTest@58ceff1]" name="tearDown" is-config="true" duration-ms="512" started-at="2018-08-08T17:07:33Z" finished-at="2018-08-08T17:07:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.stqa.pft.addressbook.test.GroupDeletionTest -->
+      <class name="ru.stqa.pft.addressbook.test.GroupModificationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupModificationTest@7c30a502]" name="setUp" is-config="true" duration-ms="7338" started-at="2018-08-08T17:07:33Z" finished-at="2018-08-08T17:07:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGroupModification()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupModificationTest@7c30a502]" name="testGroupModification" duration-ms="4717" started-at="2018-08-08T17:07:40Z" finished-at="2018-08-08T17:07:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupModification -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupModificationTest@7c30a502]" name="tearDown" is-config="true" duration-ms="427" started-at="2018-08-08T17:07:45Z" finished-at="2018-08-08T17:07:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.stqa.pft.addressbook.test.GroupModificationTest -->
+      <class name="ru.stqa.pft.addressbook.test.NewContactCreation">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.stqa.pft.addressbook.test.NewContactCreation@49e4cb85]" name="setUp" is-config="true" duration-ms="7352" started-at="2018-08-08T17:07:46Z" finished-at="2018-08-08T17:07:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="testNewContactCreation()[pri:0, instance:ru.stqa.pft.addressbook.test.NewContactCreation@49e4cb85]" name="testNewContactCreation" duration-ms="5175" started-at="2018-08-08T17:07:53Z" finished-at="2018-08-08T17:07:58Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lists differ at element [8]: ContactData{id='43', name='Jezierska Hanna +483453845'} != ContactData{id='2147483647', name='Hanna'} expected [ContactData{id='43', name='Jezierska Hanna +483453845'}] but found [ContactData{id='2147483647', name='Hanna'}]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lists differ at element [8]: ContactData{id='43', name='Jezierska Hanna +483453845'} != ContactData{id='2147483647', name='Hanna'} expected [ContactData{id='43', name='Jezierska Hanna +483453845'}] but found [ContactData{id='2147483647', name='Hanna'}]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:831)
+at org.testng.Assert.assertEquals(Assert.java:796)
+at ru.stqa.pft.addressbook.test.NewContactCreation.testNewContactCreation(NewContactCreation.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:580)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:716)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:988)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:72)
+at org.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:123)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testNewContactCreation -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.stqa.pft.addressbook.test.NewContactCreation@49e4cb85]" name="tearDown" is-config="true" duration-ms="415" started-at="2018-08-08T17:07:58Z" finished-at="2018-08-08T17:07:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.stqa.pft.addressbook.test.NewContactCreation -->
+      <class name="ru.stqa.pft.addressbook.test.ContactDeletionTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.stqa.pft.addressbook.test.ContactDeletionTest@27f674d]" name="setUp" is-config="true" duration-ms="12311" started-at="2018-08-08T17:06:33Z" finished-at="2018-08-08T17:06:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testContactDeletion()[pri:0, instance:ru.stqa.pft.addressbook.test.ContactDeletionTest@27f674d]" name="testContactDeletion" duration-ms="4015" started-at="2018-08-08T17:06:45Z" finished-at="2018-08-08T17:06:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testContactDeletion -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.stqa.pft.addressbook.test.ContactDeletionTest@27f674d]" name="tearDown" is-config="true" duration-ms="440" started-at="2018-08-08T17:06:49Z" finished-at="2018-08-08T17:06:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.stqa.pft.addressbook.test.ContactDeletionTest -->
+      <class name="ru.stqa.pft.addressbook.test.GroupCreationTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupCreationTest@48140564]" name="setUp" is-config="true" duration-ms="10673" started-at="2018-08-08T17:07:05Z" finished-at="2018-08-08T17:07:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testGroupCreationTest()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupCreationTest@48140564]" name="testGroupCreationTest" duration-ms="5373" started-at="2018-08-08T17:07:16Z" finished-at="2018-08-08T17:07:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGroupCreationTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:ru.stqa.pft.addressbook.test.GroupCreationTest@48140564]" name="tearDown" is-config="true" duration-ms="426" started-at="2018-08-08T17:07:21Z" finished-at="2018-08-08T17:07:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- ru.stqa.pft.addressbook.test.GroupCreationTest -->
+    </test> <!-- Sandbox -->
+  </suite> <!-- Default Suite -->
+</testng-results>
