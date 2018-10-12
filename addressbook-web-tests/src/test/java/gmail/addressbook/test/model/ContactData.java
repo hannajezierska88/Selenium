@@ -1,4 +1,4 @@
-package gmail.addressbook.test;
+package gmail.addressbook.test.model;
 
 public class ContactData {
   private final String name;

@@ -1,4 +1,4 @@
-package gmail.addressbook.test;
+package gmail.addressbook.test.model;
 
 public class GroupData {
   private final String name;
